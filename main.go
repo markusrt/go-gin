@@ -13,8 +13,9 @@ func main() {
 
 	// Handle Index
 	router.GET("/", showIndexPage)
-	// Handle GET requests at /article/view/some_article_id
-	router.GET("/article/view/:article_id", getArticle)
+	router.GET("/articles", showIndexPage)
+	// Handle GET requests at /articles/some_article_id
+	router.GET("/articles/:article_id", getArticle)
 
 	router.Run()
 
