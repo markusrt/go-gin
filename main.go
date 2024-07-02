@@ -9,7 +9,7 @@ var router *gin.Engine
 func main() {
 
 	router := gin.Default()
-	router.LoadHTMLGlob("templates/*")
+	router.LoadHTMLGlob("./templates/*")
 
 	// Handle Index
 	router.GET("/", showIndexPage)
